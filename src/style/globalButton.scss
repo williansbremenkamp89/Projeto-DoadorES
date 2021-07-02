@@ -1,0 +1,34 @@
+.globalButton{
+  height: 45px;
+  border-radius: 8px;
+  font-weight: 500;
+  background: #008080;
+  color: #fff;
+  padding: 0 32px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+
+  cursor: pointer;
+  border: 0;
+
+  transition: filter 0.2s;
+
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.19);
+
+  img {
+    margin-right: 8px;
+    width: 30px;
+  }
+
+  &:not(:disabled):hover {
+    filter: brightness(0.9);
+  }
+
+  &:disabled {
+    opacity: 0.6%;
+    cursor: not-allowed;
+  }
+}
