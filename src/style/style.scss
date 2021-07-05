@@ -16,6 +16,8 @@
     justify-content: center;
     height: 10px;
     
+    margin: 1%;
+
     padding: 15px 20px;
 
     img{
@@ -32,7 +34,8 @@
 
     display: flex;
     flex-direction: row;
-    justify-content: center;    
+    justify-content: center;
+    
     
   }
 
@@ -45,9 +48,9 @@
     align-items: center;
     color: black;
 
-    // margin-left: 1%;
+    margin-left: 1%;
 
-    // padding: 100px 32px;
+    padding: 100px 32px;
 
     strong{
       font: 400 38px 'Poppins', sans-serif;
@@ -99,8 +102,8 @@
       .group-buttons{
         display: flex;
         flex-direction: column;
-        width: 400px;
-        max-width: 100%;
+        width: 300px;
+        max-width: 400px;
         align-items: stretch;
         text-align: center;
 
@@ -109,7 +112,7 @@
         // box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.19);
         // border: solid 0.01px rgba(128, 128, 128, 0.19);
 
-        // padding: 15px 10px;
+        padding: 15px 10px;
         border-radius: 8px; 
       }  
 
@@ -118,3 +121,6 @@
   }
 
 }
+
+
+// esse aqui pode ser deletado ficou apenas para esborço

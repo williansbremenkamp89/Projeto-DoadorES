@@ -48,32 +48,34 @@ export function Home(){
       <main>
         <div className="main-content">
           <img src={logoImg} alt="Logo doadores" />
-          <button onClick={handlerCreateUsuarioGoogle} className="acess-google">
-            <img src={googleImageIcon} alt="" />
-            Entre com sua conta Google
-          </button>
-          <button onClick={handlerCreateUsuarioFacebook} className="acess-facebook">
-            <img src={faceBookImageIcon} alt="" />
-            Entre com sua conta do Facebook
-          </button>
-          <div className="separador">ou entre com outra conta</div>
-          <form action="">
-            <input 
-            type="text" 
-            placeholder="Digite seu e-mail"
-            />
-            <input 
-            type="password" 
-            placeholder="Digite sua senha"
-            />
-            <Button type="submit">
-              Entrar
-            </Button>
-            <div className="options">
-              <p> <a href="/user/register">Registre-se.</a> </p>
-              <p> <a href="https://www.google.com/">Esqueci a senha.</a> </p>
-            </div>
-          </form>
+          <div className="main-form">
+            <button onClick={handlerCreateUsuarioGoogle} className="acess-google">
+              <img src={googleImageIcon} alt="" />
+              Entre com sua conta Google
+            </button>
+            <button onClick={handlerCreateUsuarioFacebook} className="acess-facebook">
+              <img src={faceBookImageIcon} alt="" />
+              Entre com sua conta do Facebook
+            </button>
+            <div className="separador">ou entre com outra conta</div>
+            <form action="">
+              <input 
+              type="text" 
+              placeholder="Digite seu e-mail"
+              />
+              <input 
+              type="password" 
+              placeholder="Digite sua senha"
+              />
+              <Button type="submit">
+                Entrar
+              </Button>
+              <div className="options">
+                <p> <a href="/user/register">Registre-se.</a> </p>
+                <p> <a href="https://www.google.com/">Esqueci a senha.</a> </p>
+              </div>
+            </form>
+          </div>
         </div>
       </main>
     </div>

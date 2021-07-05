@@ -5,7 +5,6 @@ import '../style/auth.scss';
 
 import { Button } from '../components/button';
 
-
 export function Registro(){
   return (
     <div id="page-auth">

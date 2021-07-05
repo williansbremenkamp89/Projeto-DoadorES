@@ -1,13 +1,9 @@
-import Avatar from '../assets/images/avatar.jpg';
 import logoImg from '../assets/images/doadoreslogo.png';
 
 import '../style/profile.scss';
 
-import { Button } from '../components/button';
-
-
-//import { Button } from '../components/button';
-
+import { Perfil } from '../components/perfil';
+import { Options } from '../components/options';
 
 export function Profile(){
   return (
@@ -18,58 +14,8 @@ export function Profile(){
         </div>
       </header>
       <body>
-        <aside>
-          <div>
-            <p>Olá </p>
-            <strong>Hermes Willians,</strong>
-            <p>Você é a esperança de muitos.</p>            
-            <div className="card">
-              <img src={Avatar} alt="Avatar" />
-            </div>
-          </div>        
-        </aside>
-        <main>
-          <div className="main-content"> 
-            <div className="group-buttons">
-              <Button type="button" >
-                Agendar Doação
-              </Button>
-              {/* <div>
-                Formulário de doação
-              </div> */}
-              <Button type="button" >
-                Atender Solicitação
-              </Button>
-              {/* <div>
-              Formulário de solicitação
-              </div> */}
-              <Button type="button" >
-                Solicitar Doação
-              </Button>
-              {/* <div>
-              Formulário para solicitar doação
-              </div> */}
-              <Button type="button" >
-                Histórico
-              </Button>              
-              {/* <div>
-                Historico de doações e solicitações
-              </div> */}
-              <Button type="button" >
-                Editar Perfil
-              </Button>              
-              {/* <div>
-                Historico de doações e solicitações
-              </div> */}
-              <Button type="button" >
-                Ajuda
-              </Button>              
-              {/* <div>
-                Historico de doações e solicitações
-              </div> */}
-            </div>
-          </div>
-        </main>
+        <Perfil/>        
+        <Options/>
       </body>
     </div>
   )
